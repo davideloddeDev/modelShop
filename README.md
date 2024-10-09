@@ -1,8 +1,31 @@
-# React + Vite
+# ecommerceModel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Panoramica
 
-Currently, two official plugins are available:
+Questo progetto funge da modello di sito web e-commerce, progettato per essere un template per la creazione di siti e-commerce simili. È costruito utilizzando React e Vite, fornendo un ambiente di sviluppo moderno ed efficiente.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Scopo
+
+Lo scopo principale di questo progetto è:
+- Servire come riferimento per la costruzione di siti web e-commerce
+- Dimostrare le migliori pratiche nello sviluppo e-commerce basato su React
+- Fornire un punto di partenza per la personalizzazione e l'espansione
+
+Nota: Questo sito non è destinato alla pubblicazione, ma piuttosto come strumento di apprendimento e sviluppo.
+
+## Stack Tecnologico
+
+- React 18.3
+- Vite
+- ESLint per la qualità del codice
+- Babel per Fast Refresh
+
+## Per Iniziare
+
+1. Clona il repository
+2. Installa le dipendenze:
+   
+   a. npm install
+   b. npm run dev
+   c. Apri il sito in un browser: http://localhost:5173
+   
