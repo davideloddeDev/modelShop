@@ -25,7 +25,7 @@ Nota: Questo sito non è destinato alla pubblicazione, ma piuttosto come strumen
 1. Clona il repository
 2. Installa le dipendenze:
    
-   a. npm install
-   b. npm run dev
-   c. Apri il sito in un browser: http://localhost:5173
+   - npm install
+   - npm run dev
+   - Apri il sito in un browser: http://localhost:5173
    
