@@ -1,7 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './header.css'
 
 export function Header() {
+  const [searchQuery, setSearchQuery] = useState('')
+  const navigate = useNavigate()
+
+  const handleSearch = (e) => {
+    e.preventDefault()
+    if (searchQuery.trim()) {
+      navigate(`/cerca/${searchQuery}`)
+    }
+  }
+
   return (
     <header className="ecommerce-header">
       <div className="header-container">
@@ -11,14 +22,20 @@ export function Header() {
         <nav className="main-menu">
           <a href="/">Home</a>
           <a href="/prodotti">Prodotti</a>
-          <a href="/categorie">Categorie</a>
-          <a href="/offerte">Offerte</a>
-          <a href="/contatti">Contatti</a>
+          <a href="/elettronica">Elettronica</a>
+          <a href="/gioielli">Gioielleria</a>
+          <a href="/uomo">Moda Uomo</a>
+          <a href="/donna">Moda Donna</a>
         </nav>
-        <div className="search-bar">
-          <input type="text" placeholder="Cerca prodotti..." />
+        <form className="search-bar" onSubmit={handleSearch}>
+          <input 
+            type="text" 
+            placeholder="Cerca prodotti..." 
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+          />
           <button type="submit">Cerca</button>
-        </div>
+        </form>
         <div className="header-actions">
           <div className="social-icons">
             <a href="#" className="social-icon facebook"></a>
